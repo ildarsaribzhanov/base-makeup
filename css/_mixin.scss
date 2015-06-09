@@ -1,0 +1,41 @@
+@mixin anim($s, $t) {
+	-webkit-transition: $s $t linear 0s;
+	-moz-transition: $s $t linear 0s;
+	-o-transition: $s $t linear 0s;
+	transition: $s $t linear 0s;
+}
+
+@mixin bd_raduis($r) {
+	-webkit-border-radius: $r;
+	-moz-border-radius: $r;
+	-ms-border-radius: $r;
+	border-radius: $r;
+}
+
+@mixin rotate_x($d) {
+	-moz-transform: rotateX($d);
+	-ms-transform: rotateX($d);
+	-webkit-transform: rotateX($d);
+	transform: rotateX($d);
+}
+
+@mixin rotate($d) {
+	-moz-transform: rotate($d);
+	-ms-transform: rotate($d);
+	-webkit-transform: rotate($d);
+	transform: rotate($d);
+}
+
+@mixin zooming($x, $y) {
+	-moz-transform: scale($x, $y);
+	-ms-transform: scale($x, $y);
+	-webkit-transform: scale($x, $y);
+	transform: scale($x, $y);
+}
+
+// $property - свойство
+// $expression - значение
+@mixin calc($property, $expression) { 
+	#{$property}: -webkit-calc(#{$expression}); 
+	#{$property}: calc(#{$expression}); 
+} 

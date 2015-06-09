@@ -1,0 +1,39 @@
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea { margin: 0; padding: 0; border: 0; outline: 0; background: transparent; font-size: 100%; vertical-align: baseline; }
+
+.title { font-family: Arial; font-size: 2em; color: #000; }
+
+html, body, input, textarea { height: 100%; }
+
+body { font-family: Arial; color: #000; }
+
+a { color: #000; }
+
+a:hover { text-decoration: none; }
+
+img { border: 0; }
+
+.b_conteiner { width: 100%; min-height: 100%; }
+
+.b_band { width: 960px; min-height: 400px; margin: 0 auto; border: 1px solid red; }
+
+/* header begin */
+.b_header { width: 100%; height: 250px; position: relative; border: 1px solid black; }
+.b_header .logo { position: absolute; top: 20px; left: 20px; border: 1px dotted black; }
+
+/* menu begin */
+.b_menu { position: absolute; top: 20px; left: 300px; border: 1px dotted black; }
+.b_menu ul { overflow: hidden; list-style: none; }
+.b_menu li { float: left; padding: 0 30px 0; }
+
+/* main begin */
+.b_maincontent { min-height: 100px; border: 1px solid blue; overflow: hidden; }
+.b_maincontent .b_left_sidebar { width: 700px; min-height: 200px; float: left; border: 1px dotted black; }
+.b_maincontent .b_right_sidebar { min-height: 200px; margin: 0 0 0 750px; border: 1px dotted red; }
+
+.b_clear { height: 100px; clear: both; }
+
+/* footer begin */
+.b_footer { width: 960px; height: 100px; position: relative; margin: -100px auto 0; color: #000; }
+
+/*# sourceMappingURL=style.css.map */
