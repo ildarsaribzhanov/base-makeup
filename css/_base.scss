@@ -1,25 +1,30 @@
-html, body, input, textarea{
+html, body {
 	height: 100%;
+	color: $color_black;
 }
-body{
+
+body, input, textarea {
 	font-family: $font_family;
+}
+
+a {
 	color: $color_black;
 }
-a{
-	color: $color_black;
-}
-a:hover{
+
+a:hover {
 	text-decoration: none;
 }
-img{
+
+img {
 	border: 0;
 }
 
-.b_conteiner{
+.b_conteiner {
 	width: 100%;
 	min-height: 100%;
 }
-.b_band{
+
+.b_band {
 	width: $width_main;
 	min-height: 400px;
 	margin: 0 auto;
@@ -27,13 +32,13 @@ img{
 }
 
 /* header begin */
-.b_header{
+.b_header {
 	width: 100%;
 	height: 250px;
 	position: relative;
 	border: 1px solid black;
 
-	.logo{
+	.logo {
 		position: absolute;
 		top: 20px;
 		left: 20px;
@@ -42,39 +47,37 @@ img{
 
 }
 
-
 /* menu begin */
-.b_menu{
+.b_menu {
 	position: absolute;
 	top: 20px;
 	left: 300px;
 	border: 1px dotted black;
 
-	ul{
+	ul {
 		overflow: hidden;
 		list-style: none;
 	}
 
-	li{
+	li {
 		float: left;
 		padding: 0 30px 0;
 	}
 }
 
-
 /* main begin */
-.b_maincontent{
+.b_maincontent {
 	min-height: 100px;
 	border: 1px solid blue;
 	overflow: hidden;
 
-	.b_left_sidebar{
+	.b_left_sidebar {
 		width: 700px;
 		min-height: 200px;
 		float: left;
 		border: 1px dotted black;
 	}
-	.b_right_sidebar{
+	.b_right_sidebar {
 		min-height: 200px;
 		margin: 0 0 0 750px;
 		border: 1px dotted red;
