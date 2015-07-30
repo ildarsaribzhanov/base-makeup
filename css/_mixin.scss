@@ -38,4 +38,10 @@
 @mixin calc($property, $expression) { 
 	#{$property}: -webkit-calc(#{$expression}); 
 	#{$property}: calc(#{$expression}); 
-} 
+}
+
+@mixin bluring($valall, $valie) {
+	-webkit-filter: blur($valall);
+	filter: blur($valall);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$valie}');
+}
