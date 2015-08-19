@@ -5,6 +5,13 @@
 	transition: $s $t linear 0s;
 }
 
+@mixin transform_animate($t) {
+	-webkit-transition: -webkit-transform $t linear 0s;
+	-moz-transition: -moz-transform $t linear 0s;
+	-o-transition: -o-transform $t linear 0s;
+	transition: transform $t linear 0s;
+}
+
 @mixin bd_raduis($r) {
 	-webkit-border-radius: $r;
 	-moz-border-radius: $r;
