@@ -1,15 +1,15 @@
-@mixin anim($s, $t) {
-	-webkit-transition: $s $t linear 0s;
-	-moz-transition: $s $t linear 0s;
-	-o-transition: $s $t linear 0s;
-	transition: $s $t linear 0s;
+@mixin anim($s, $t, $d: 0s) {
+	-webkit-transition: $s $t linear $d;
+	-moz-transition: $s $t linear $d;
+	-o-transition: $s $t linear $d;
+	transition: $s $t linear $d;
 }
 
-@mixin transform_animate($t) {
-	-webkit-transition: -webkit-transform $t linear 0s;
-	-moz-transition: -moz-transform $t linear 0s;
-	-o-transition: -o-transform $t linear 0s;
-	transition: transform $t linear 0s;
+@mixin transform_animate($t, $d: 0s) {
+	-webkit-transition: -webkit-transform $t linear $d;
+	-moz-transition: -moz-transform $t linear $d;
+	-o-transition: -o-transform $t linear $d;
+	transition: transform $t linear $d;
 }
 
 @mixin bd_raduis($r) {
