@@ -2,6 +2,7 @@
 images/
 demoimg/
 font/
+.idea/
 
 # Исключение .map файлов
 *.map

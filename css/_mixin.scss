@@ -52,3 +52,16 @@
 	filter: blur($valall);
 	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$valie}');
 }
+
+@mixin flex($flow: row wrap, $justify: flex-start) {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: $flow;
+	flex-flow: $flow;
+
+	justify-content: $justify;
+}
