@@ -3,9 +3,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .title { font-family: Arial; font-size: 2em; color: #000; }
 
-html, body, input, textarea { height: 100%; }
+html, body { height: 100%; color: #000; }
 
-body { font-family: Arial; color: #000; }
+body, input, textarea { font-family: Arial; }
 
 a { color: #000; }
 

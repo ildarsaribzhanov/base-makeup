@@ -1,4 +1,4 @@
-@mixin anim($s, $t, $fn: linear,  $d: 0s) {
+@mixin transition($s, $t, $fn: linear,  $d: 0s) {
 	-webkit-transition: $s $t $fn $d;
 	-moz-transition: $s $t $fn $d;
 	-o-transition: $s $t $fn $d;
