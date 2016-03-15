@@ -12,11 +12,10 @@
 	transition: transform $t $fn $d;
 }
 
-@mixin bd_raduis($r) {
-	-webkit-border-radius: $r;
-	-moz-border-radius: $r;
-	-ms-border-radius: $r;
-	border-radius: $r;
+@mixin bd_raduis($r1, $r2:$r1, $r3:$r1, $r4:$r2) {
+	-webkit-border-radius: $r1 $r2 $r3 $r4;
+	-moz-border-radius: $r1 $r2 $r3 $r4;
+	border-radius: $r1 $r2 $r3 $r4;
 }
 
 @mixin rotate_x($d) {
