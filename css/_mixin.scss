@@ -5,11 +5,19 @@
 	transition: $s $t $fn $d;
 }
 
-@mixin transform_animate($t, $fn: linear, $d: 0s) {
+@mixin transform_transition($t, $fn: linear, $d: 0s) {
 	-webkit-transition: -webkit-transform $t $fn $d;
 	-moz-transition: -moz-transform $t $fn $d;
 	-o-transition: -o-transform $t $fn $d;
 	transition: transform $t $fn $d;
+}
+
+@mixin animate($name, $t: 1s, $fn: linear, $d: 0s, $count: 1) {
+	animation-name: $name;
+	animation-duration: $t;
+	animation-timing-function: $fn;
+	animation-delay: $d;
+	animation-iteration-count: $count;
 }
 
 @mixin bd_raduis($r1, $r2:$r1, $r3:$r1, $r4:$r2) {
