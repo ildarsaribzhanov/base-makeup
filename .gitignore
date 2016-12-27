@@ -3,3 +3,10 @@
 
 # Исключение .map файлов
 *.map
+
+*.json
+!package.json
+
+# Gulp
+/*.log
+node_modules
