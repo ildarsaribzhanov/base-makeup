@@ -49,9 +49,9 @@
 
 // $property - свойство
 // $expression - значение
-@mixin calc($property, $expression) { 
-	#{$property}: -webkit-calc(#{$expression}); 
-	#{$property}: calc(#{$expression}); 
+@mixin calc($property, $expression) {
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: calc(#{$expression});
 }
 
 @mixin bluring($valall, $valie) {
