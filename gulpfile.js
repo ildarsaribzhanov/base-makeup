@@ -27,6 +27,13 @@ gulp.task('sass:watch', function () {
 	gulp.watch('./css/**/*.scss', ['sass']);
 });
 
+// image compress
+gulp.task('compress-img', function() {
+	gulp.src('images/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('images'))
+});
+
 
 // JS COMPRESSED
 gulp.task('compressed-js', function () {
