@@ -17,22 +17,6 @@ table, caption, tbody, tfoot, thead, tr, th, td, input, textarea {
   vertical-align: baseline;
 }
 
-/*
-	// use
-	.my-box {
-		padding: 10px;
-
-		@include for-desktop-up {
-			padding: 20px;
-		}
-	}
-*/
-.title {
-  font-family: Arial;
-  font-size: 2em;
-  color: #000;
-}
-
 html, body {
   height: 100%;
   color: #000;
@@ -54,7 +38,23 @@ img {
   border: 0;
 }
 
-.b_conteiner {
+/*
+	// use
+	.my-box {
+		padding: 10px;
+
+		@include for-desktop-up {
+			padding: 20px;
+		}
+	}
+*/
+.title {
+  font-family: Arial;
+  font-size: 2em;
+  color: #000;
+}
+
+.b_wrapper {
   width: 100%;
   min-height: 100%;
 }
