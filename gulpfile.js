@@ -4,7 +4,8 @@ var gulp       = require('gulp'),
     sass       = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify     = require('gulp-uglify'),
-    rename     = require('gulp-rename');
+    rename     = require('gulp-rename'),
+    imagemin   = require('gulp-imagemin');
 
 // SCSS compiled
 gulp.task('sass', function () {
