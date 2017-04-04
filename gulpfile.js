@@ -39,8 +39,18 @@ gulp.task('compress-img', function() {
 // JS COMPRESSED
 gulp.task('compressed-js', function () {
 	gulp.src('js/src/*.js')
+		.pipe(sourcemaps.init())
+
+		// Собственно минификация
 		.pipe(uglify())
+
+		// Добавление префикса
 		.pipe(rename({suffix: '.min'}))
+
+		// map-файл положим в отдельную папку
+		.pipe(sourcemaps.write('./maps'))
+
+		// А результат сжатия тоже в свою папку
 		.pipe(gulp.dest('js'));
 });
 
