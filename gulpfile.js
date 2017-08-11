@@ -15,7 +15,7 @@ gulp.task('sass', function () {
 		.pipe(sourcemaps.init())
 
 		// Собственно компиляция
-		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+		.pipe(sass({outputStyle: 'expanded', indentType: 'tab', indentWidth: 1}).on('error', sass.logError))
 
 		// Куда положить .map
 		.pipe(sourcemaps.write('./'))
